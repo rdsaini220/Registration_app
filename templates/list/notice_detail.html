@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+{% block title %}
+    list details
+{% endblock title %}
+
+{% block body %}
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12 m-3">
+                <h3>{{notice.subject}}</h3>
+                <b>{{notice.date}}</b>
+                <p>{{notice.content}}</p>
+                <a href="/list/notice">back</a>
+            </div>
+        </div>
+    </div>
+{% endblock %}

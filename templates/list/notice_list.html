@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+{% block title %}
+    list view page
+{% endblock title %}
+{% block noticeactive %} active {% endblock noticeactive %}
+
+{% block body %}
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12 m-3">
+                {% for n1 in notice_list  %}
+                    <h5> <a href="/list/notice/{{n1.id}}">{{n1.subject}}</a></h5>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+{% endblock %}
